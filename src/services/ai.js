@@ -5,7 +5,7 @@ const genAI = new GoogleGenerativeAI(apiKey);
 
 export async function generateItinerary(destination, days, interests) {
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
     const prompt = `
       Act as an expert travel planner. Create a detailed, day-by-day travel itinerary for a ${days}-day trip to ${destination}.
