@@ -12,6 +12,7 @@ import { BudgetPlanner } from './pages/BudgetPlanner';
 import { Login } from './pages/Login';
 import { Register } from './pages/Register';
 import { Dashboard } from './pages/Dashboard';
+import { AiPlanner } from './pages/AiPlanner';
 import { PlaceholderPage } from './pages/PlaceholderPage';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
               <Route path="explore/:id" element={<DestinationDetails />} />
               <Route path="budget" element={<BudgetPlanner />} />
               <Route path="dashboard" element={<Dashboard />} />
+              <Route path="ai-planner" element={<AiPlanner />} />
               
               <Route path="login" element={<Login />} />
               <Route path="register" element={<Register />} />
